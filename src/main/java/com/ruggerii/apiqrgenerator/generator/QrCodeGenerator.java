@@ -52,12 +52,12 @@ public class QrCodeGenerator implements Gerador {
         }
     }
 
-    private MultipartFile gerarMultiPartFile(ByteArrayOutputStream imagem) throws IOException {
+    private MultipartFile gerarMultiPartFile(final ByteArrayOutputStream imagem) throws IOException {
         final InputStream in = new ByteArrayInputStream(imagem.toByteArray());
         final File file = File.createTempFile("tmp", ".jpg");
 
         copyInputStreamToFile(in, file);
-        FileItem fileItem =
+        final FileItem fileItem =
                 new DiskFileItem(
                         "file",
                         Files.probeContentType(file.toPath()),
@@ -66,14 +66,14 @@ public class QrCodeGenerator implements Gerador {
                         (int) file.length(),
                         file.getParentFile());
 
-        InputStream input = new FileInputStream(file);
-        OutputStream os = fileItem.getOutputStream();
+        final InputStream input = new FileInputStream(file);
+        final OutputStream os = fileItem.getOutputStream();
         IOUtils.copy(input, os);
         final MultipartFile multipartFile = new CommonsMultipartFile(fileItem);
         return multipartFile;
     }
 
-    private void copyInputStreamToFile(InputStream inputStream, File file)
+    private void copyInputStreamToFile(final InputStream inputStream, final File file)
             throws IOException {
 
         try (FileOutputStream outputStream = new FileOutputStream(file)) {
@@ -89,7 +89,7 @@ public class QrCodeGenerator implements Gerador {
 
     }
 
-    private BufferedImage gerarImagem(int largura, int altura, BitMatrix bitMatrix) {
+    private BufferedImage gerarImagem(final Integer largura, final Integer altura, final BitMatrix bitMatrix) {
         final BufferedImage bufferDaImagem = new BufferedImage(largura, largura,
                 BufferedImage.TYPE_INT_RGB);
 

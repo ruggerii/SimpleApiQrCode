@@ -2,7 +2,6 @@ package com.ruggerii.apiqrgenerator.services;
 
 import com.ruggerii.apiqrgenerator.generator.GeneratorType;
 import com.ruggerii.apiqrgenerator.generator.Geradores;
-import com.ruggerii.apiqrgenerator.generator.QrCodeGenerator;
 import com.ruggerii.apiqrgenerator.models.dto.MensagemDTO;
 import com.ruggerii.apiqrgenerator.services.interfaces.IQrCodeGeneratorService;
 import lombok.RequiredArgsConstructor;
