@@ -1,0 +1,16 @@
+version: '3.4'
+services:
+  apiqrcode:
+    image: apiqrcode
+    command: mvn spring-boot:run
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports: 
+      - "7070:8080"
+    networks:
+      - qrcode-network
+
+networks:
+  qrcode-network:
+    driver: bridge
