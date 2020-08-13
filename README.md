@@ -3,7 +3,8 @@ Apenas uma simples API para gerar QR Code
 
 
 # Maven (Necessário ter Maven Instalado e JDK 11)
-1.Gerar pacotes: mvn clean install -DskipTests (por enquanto kk)
+Gerar pacotes
+1. mvn clean install -DskipTests (por enquanto kk)
 
 # Docker
 1. docker-compose build
