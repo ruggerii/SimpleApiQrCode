@@ -1,0 +1,12 @@
+com\ruggerii\apiqrgenerator\config\exceptions\GeradorException.class
+com\ruggerii\apiqrgenerator\controllers\QrCodeGeneratorController.class
+com\ruggerii\apiqrgenerator\generator\Geradores.class
+com\ruggerii\apiqrgenerator\services\interfaces\IQrCodeGeneratorService.class
+com\ruggerii\apiqrgenerator\models\dto\MensagemDTO.class
+com\ruggerii\apiqrgenerator\config\SwaggerConfiguration.class
+com\ruggerii\apiqrgenerator\generator\QrCodeGenerator.class
+com\ruggerii\apiqrgenerator\ApiQrGeneratorApplication.class
+com\ruggerii\apiqrgenerator\generator\Gerador.class
+com\ruggerii\apiqrgenerator\services\QrCodeGeneratorService.class
+com\ruggerii\apiqrgenerator\generator\Geradores$1.class
+com\ruggerii\apiqrgenerator\generator\GeneratorType.class
